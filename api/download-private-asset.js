@@ -21,7 +21,7 @@ export default async (request, response) => {
   } catch (e) {
     if (e instanceof AxiosError) {
       const axiosError = e;
-      const statusCode = Number(axiosError.code) || 404;
+      const statusCode = axiosError.code || 404;
       return response.status(statusCode).end();
     }
   }
