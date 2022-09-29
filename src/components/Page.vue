@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" class="px-6">
+  <div v-editable="blok" class="page">
     <StoryblokComponent
       v-for="blok in blok.body"
       :blok="blok"
@@ -11,3 +11,9 @@
 <script setup>
 defineProps({ blok: Object });
 </script>
+
+<style scoped>
+.page {
+  padding: 1rem;
+}
+</style>
