@@ -1,6 +1,18 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import { StoryblokVue, apiPlugin } from "@storyblok/vue";
 
-import './assets/main.css'
+import App from "./App.vue";
+import Page from "./components/Page.vue";
+import PrivateAssetLink from "./components/PrivateAssetLink.vue";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(StoryblokVue, {
+  accessToken: import.meta.env.VITE_STORYBLOK_PREVIEW_TOKEN,
+  use: [apiPlugin],
+});
+
+app.component("PrivateAssetLink", PrivateAssetLink);
+app.component("Page", Page);
+
+app.mount("#app");
