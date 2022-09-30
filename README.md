@@ -1,14 +1,8 @@
-# private-assets-demo
+## Storyblok Private Asset Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a demo repository to showcase a typical use case for Storyblok private assets.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Made with Storyblok SDK, Vue3 and Vercel functions.
 
 ## Project Setup
 
@@ -19,7 +13,7 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+npm run dev && vercel dev
 ```
 
 ### Compile and Minify for Production
